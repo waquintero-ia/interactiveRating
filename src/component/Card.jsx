@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Card = () => {
 
   const scores = [1, 2, 3, 4, 5]
@@ -33,10 +35,12 @@ const Card = () => {
             ))}
 
           </div>
-        
-          <button className="text-sm text-very-dark-blue leading-18 bg-orange w-full min-h-49 rounded-full uppercase tracking-1.87">
-            Submit
-          </button>
+
+          <Link to={'/thanks'}>
+            <button className="text-sm text-very-dark-blue leading-18 bg-orange w-full min-h-49 rounded-full uppercase tracking-1.87">
+              Submit
+            </button>
+          </Link> 
         </div>
       </section>
     </>

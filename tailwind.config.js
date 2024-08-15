@@ -31,6 +31,7 @@ export default {
       width: {
         327: '327px',
         42: '42px',
+        144: '144px'
       },
       minHeight: {
         360: '360px',
@@ -38,6 +39,7 @@ export default {
       },
       height: {
         42: '42px',
+        96: '96px',
       },
       spacing: {
         '42': '42px',
