@@ -25,12 +25,25 @@ export default {
         'loose': '1.6',
         37: '2.313rem',
         22: '1.375rem',
+        24: '1.5rem',
+        18: '1.125rem',
       },
       width: {
         327: '327px',
+        42: '42px',
       },
       minHeight: {
         360: '360px',
+        49: '49px',
+      },
+      height: {
+        42: '42px',
+      },
+      spacing: {
+        '42': '42px',
+      },
+      letterSpacing:{
+        '1.87': '1.87px'
       },
       fontSize: {
         
