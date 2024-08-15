@@ -17,7 +17,7 @@ const Card = () => {
             How did we do?
           </h1>
 
-          <p className="text-pure-white text-sm leading-22 mb-6">
+          <p className="text-light-grey text-sm leading-22 mb-6">
             Please let us know how we did with your support request. All feedback is appreciated 
             to help us improve our offering!
           </p>

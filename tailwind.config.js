@@ -31,11 +31,13 @@ export default {
       width: {
         327: '327px',
         42: '42px',
-        144: '144px'
+        144: '144px',
+        168: '168px',
       },
       minHeight: {
         360: '360px',
         49: '49px',
+        
       },
       height: {
         42: '42px',
