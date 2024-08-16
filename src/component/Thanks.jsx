@@ -1,4 +1,6 @@
-const Thanks = () => {
+import PropTypes from 'prop-types';
+
+const Thanks = ({ score }) => {
   return (
     <>
       <section className="card">
@@ -10,7 +12,7 @@ const Thanks = () => {
 
           <p className="w-168 min-h-8 flex justify-center items-center bg-dark-blue rounded-full mb-6">
             <span className="text-orange text-sm leading-22">
-              You selected 4 out of 5
+              {`You selected ${score} out of 5`}
             </span>
           </p>
 
@@ -28,5 +30,9 @@ const Thanks = () => {
     </>
   )
 }
+
+Thanks.propTypes = {
+  score: PropTypes.string.isRequired,
+};
 
 export default Thanks

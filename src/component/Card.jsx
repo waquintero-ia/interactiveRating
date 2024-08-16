@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-const Card = () => {
+const Card = ({ handleChange }) => {
 
   const scores = [1, 2, 3, 4, 5]
+
+
 
   return (
     <>
@@ -27,7 +30,7 @@ const Card = () => {
             {
               scores.map((score) => (
               <label key={score} className="flex items-center">
-                <input type="radio" name="button-group" value={1} className="hidden peer"/>  
+                <input type="radio" name="button-group" value={score} onChange={handleChange} className="hidden peer"/>  
                 <span className="text-sm text-light-grey bg-dark-blue w-42 h-42 rounded-full flex items-center justify-center cursor-pointer peer-checked:bg-pure-white peer-checked:text-dark-blue hover:bg-orange hover:text-dark-blue focus:bg-orange focus:text-dark-blue " tabIndex={0}>
                   {score}
                 </span>
@@ -46,5 +49,9 @@ const Card = () => {
     </>
   )
 }
+
+Card.propTypes = {
+  handleChange: PropTypes.func.isRequired,
+};
 
 export default Card

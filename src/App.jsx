@@ -2,16 +2,29 @@ import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Card from './component/Card'
 import Thanks from './component/Thanks';
+import { useState } from 'react';
 
 function App() {
+
+  const [selectedValue, setSelectedValue] = useState(null);
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+
+    
+    
+  };
+
+  console.log(selectedValue);
+
 
   return (
     <>
       <Router>
         <main>
           <Routes>
-            <Route path='/' element= {<Card />}/>
-            <Route path='/thanks' element= {<Thanks />}/>
+            <Route path='/' element= {<Card handleChange={handleChange}/>}/>
+            <Route path='/thanks' element= {<Thanks score={selectedValue}/>}/>
           </Routes>
         </main>
       </Router>
