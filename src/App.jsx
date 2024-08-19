@@ -10,13 +10,7 @@ function App() {
 
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
-
-    
-    
   };
-
-  console.log(selectedValue);
-
 
   return (
     <>
