@@ -39,7 +39,7 @@ const Card = ({ handleChange }) => {
 
           </div>
 
-          <Link to={'/thanks'}>
+          <Link to={'/interactiveRating/thanks'}>
             <button className="text-sm text-very-dark-blue leading-18 bg-orange w-full min-h-49 rounded-full uppercase tracking-1.87 lg:h-[45px]">
               Submit
             </button>

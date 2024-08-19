@@ -23,8 +23,8 @@ function App() {
       <Router>
         <main>
           <Routes>
-            <Route path='/' element= {<Card handleChange={handleChange}/>}/>
-            <Route path='/thanks' element= {<Thanks score={selectedValue}/>}/>
+            <Route path='/interactiveRating' element= {<Card handleChange={handleChange}/>}/>
+            <Route path='/interactiveRating/thanks' element= {<Thanks score={selectedValue}/>}/>
           </Routes>
         </main>
       </Router>
