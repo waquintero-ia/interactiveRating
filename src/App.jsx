@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 function App() {
 
-  const [selectedValue, setSelectedValue] = useState(null);
+  const [selectedValue, setSelectedValue] = useState('0');
 
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
