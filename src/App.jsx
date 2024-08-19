@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Card from './component/Card'
 import Thanks from './component/Thanks';
 import { useState } from 'react';
@@ -23,8 +23,8 @@ function App() {
       <Router>
         <main>
           <Routes>
-            <Route path='/interactiveRating' element= {<Card handleChange={handleChange}/>}/>
-            <Route path='/interactiveRating/thanks' element= {<Thanks score={selectedValue}/>}/>
+            <Route path='/' element= {<Card handleChange={handleChange}/>}/>
+            <Route path='/thanks' element= {<Thanks score={selectedValue}/>}/>
           </Routes>
         </main>
       </Router>
